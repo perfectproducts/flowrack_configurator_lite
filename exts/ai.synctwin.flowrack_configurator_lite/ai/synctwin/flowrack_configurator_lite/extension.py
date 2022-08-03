@@ -66,7 +66,7 @@ class ItemConfiguratorLiteExtension(omni.ext.IExt):
         
         self._rack = BeamFlowRackModel() 
                 
-        self._window = ui.Window("Flow Rack Configurator (Lite)", width=240, height=300)
+        self._window = ui.Window("SyncTwin Flow Rack Configurator (Lite)", width=240, height=300)
 
         with self._window.frame:
             
