@@ -1,0 +1,38 @@
+[package]
+# Semantic Versionning is used: https://semver.org/
+version = "1.0.0"
+
+# The title and description fields are primarily for displaying extension info in UI
+title = "synctwin item flowrack configurator lite"
+description="an item flowrack configurator lite by synctwin"
+
+# Path (relative to the root) or content of readme markdown file for UI.
+readme  = "docs/README.md"
+
+# URL of the extension source repository.
+repository = "https://github.com/perfectproducts/flowrack_configurator_lite"
+
+# One of categories for UI.
+category = "manufacturing"
+
+# Keywords for the extension
+keywords = ["kit", "manufacturing"]
+
+# Preview image is shown in "Overview" of Extensions window. Screenshot of an extension might be a good preview image.
+preview_image = "data/preview.png"
+
+# Icon is shown in Extensions window, it is recommended to be square, of size 256x256.
+icon = "data/logo.png" 
+
+
+# Use omni.ui to build simple UI
+[dependencies]
+"omni.kit.uiapp" = {}
+
+[[python.module]]
+name = "ai.synctwin.flowrack_configurator_lite"
+
+[settings]
+# set your paths here 
+#bom_path = "path_to_bom" # default is [script_root]/bom
+#templates_path = "path_to_template_parts"  # default is [script_root]/templates
